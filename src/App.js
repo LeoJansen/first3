@@ -1,24 +1,19 @@
-import "./styles.css";
-import styled from "styled-components";
 
-import Background from "./components/Background";
-import TextSection from "./components/TextSection";
-import { Canvas } from "@react-three/fiber"; 
+import './App.css';
+import {Canvas} from '@react-three/fiber'
+import Box from './components/Box';
 
-
-export default function App() {
+function App() {
   return (
-    <Wrapper className="App">
-      <Background />
-      <TextSection />
+    <div className="App">
+      <h1>App</h1>
       <Canvas>
-        
+        <Box/>
       </Canvas>
-    </Wrapper>
+
+ 
+    </div>
   );
 }
 
-const Wrapper = styled.div`
-  position: relative;
-  background: #1f1144;
-`;
+export default App;
